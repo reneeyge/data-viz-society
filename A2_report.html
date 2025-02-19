@@ -55,12 +55,16 @@
 				</figcaption>
 			</figure>
 
+			<p>This map shows the HOLC-assigned categories for areas in 26 Greater Boston cities under the jurisdiction of the MAPC. Each city consists of multiple areas, described with an assigned category from HOLC: “Best,” “Still Desirable,” “Definitely Declining,” and “Hazardous,” with a corresponding shade approximating the color shown on a redlining map. For nonresidential areas without a HOLC-assigned category and zoned for business, industrial, or commercial use, this map allows a separate category and shades these areas red. However, to focus on the topic of geographic distribution of HOLC-assigned for residential areas, we exclude areas for business, industrial, or commercial use, as seen below:</p>
+
 			<figure>
 				<img src="images/map_edited.png" alt="Map of Boston Area by HOLC-assigned Category" />
 				<figcaption>
 					A visualization of neighborhood classifications based on desirability, ranging from "Best" (orange) to "Hazardous" (light blue).
 				</figcaption>
 			</figure>
+
+			<p>We can observe that each of the four area categories seem evenly distributed across the Greater Boston Area; no city seems to consist of areas of the same category. More work needs to be done to look more closely at the distribution of area categories across different cities and examine geographic patterns in the data.</p>
 
 			<figure>
 				<img src="images/bar_city_normalized.png" alt="Normalized Bar Chart of Area Classifications Across Different Cities" />
@@ -69,12 +73,16 @@
 				</figcaption>
 			</figure>
 
+			<p>We explore the distribution of area categories across different cities with a normalized bar chart, which shows the category makeup in percentage of each city. The cities are ordered by their number of distinct area categories — cities with the lowest number of distinct area categories, like Chelsea, Everett, and Revere, which only have areas in the “Hazardous” and “Definitely Declining” areas, are at the top of the chart, while cities with the highest number of distinct area categories (four), like Newton, Salem, and Waltham, are at the bottom. From this normalized bar chart, we can begin to see a separation in the distribution of so-called “desirable” or “declining” areas of different Boston-area cities. However, this normalized bar chart doesn’t capture how the number of areas can vary widely across different cities. Because of this, we unnormalize the bar chart, as seen below:</p>
+
 			<figure>
 				<img src="images/bar_city.png" alt="Unnormalized Bar Chart of Area Classifications Across Different Cities" />
 				<figcaption>
 					A breakdown in number of neighborhood classifications by city, showing the proportion of "Best," "Still Desirable," "Definitely Declining," and "Hazardous" areas in each location.
 				</figcaption>
 			</figure>
+
+			<p>From this bar chart of the distribution of area categories across different cities, we can see that the number of areas varies wildly depending on the city: Boston by far has the most number of areas at 39, while Everett has the least number of areas, with four. We should keep this variability in city size in mind before making generalizations across all cities. With this new awareness of these differences between cities, we recall this reading, where we learned that each town seemed to have some jurisdiction and agency over its social planning and resources. To investigate more fully the geographic patterns of areas with higher or lower grades, it seems relevant to look at the town-level closely to examine how each city responded to population shifts.</p>
 
 			<figure>
 				<img src="images/city_geographic.png" alt="Map Comparison of Eight Cities in Boston with Areas in All Classications" />
@@ -83,6 +91,8 @@
 				</figcaption>
 			</figure>
 
+			<p>This collection of maps shows the HOLC-assigned categories of the areas of the eight cities under the jurisdiction of the MAPC that contain areas from all four categories. These cities are selected from the bottom of the bar chart in the figure above, and we select these cities because as cities with areas in each of the four categories, they are likely to be confronted with similar social planning and resource distribution issues and exhibit similar characteristics. We observe, interestingly, that the areas categorized as “best” are on typically the edges of the cities, and especially geographically distant to areas categorized as “hazardous” and “declining.” This leads to the question: what is correlated with the geographic location of areas deemed as “hazardous?”</p>
+
 			<figure>
 				<img src="images/city_geographic_include.png" alt="Map Comparison of Eight Cities in Boston with Areas in All Classications, including Business/Industrial/Commercial Areas" />
 				<figcaption>
@@ -90,12 +100,20 @@
 				</figcaption>
 			</figure>
 
+			<p>If we include in the maps the Business, Industrial, or Commercial category that we excluded in the beginning of the assignment, a pattern emerges: areas zoned for business, industrial, or commercial purposes almost exclusively border “hazardous” or “definitely declining” areas (with the exception of Brookline and Newton, which do not have nonresidential areas). For Waltham, Newton, Cambridge, Boston, Salem, and Lynn, nonresidential areas and “best” areas don’t border each other at all. These findings relates to our last question about the existing patterns between nonresidential land usage and redlining categories, as it seems to imply that the residential areas around land used for business, industrial, or commercial purposes become less valuable and safe, from the perspective of HOLC’s intentions to help provide mortgages to residents.
+
+				Recalling back to the reading, we guess this might be because white, more affluent residents began moving away from urban and commercial spaces towards the suburbs as Black Americans migrated to the commercial centers of Boston. The later development of the suburbs, with the development of Route 128 and Route 495, “magnified the effects of segregation by increasing the physical separation between whites and minorities.”</p>
+
 			<figure>
 				<img src="images/Dashboard_4.png" alt="Spatial Distribution for Area Categories in Boston" />
 				<figcaption>
 					A series of maps depicting different area classifications across the region. Each color represents a specific category, highlighting patterns of "Best," "Still Desirable," "Definitely Declining," and "Hazardous" areas.
 				</figcaption>
 			</figure>
+
+			<p>
+				Looking back at the map in Figure 1, we see this pattern emerging more broadly as part of a macro-view of Greater Boston. Business, industrial, and commercial areas are located generally in the center of the city. The “hazardous” light-blue areas are concentrated around the city center as well, in some cases bordering the business/industrial/commercial areas. The “definitely declining” green areas and “still desirable” dark blue areas expand further outwards. The “best” orange areas, which HOLC considers are ideal neighborhoods to give mortgages for, are the furthest away from the business, industrial, and commercial areas.
+			</p>
 		</section>
 
 		<section>
