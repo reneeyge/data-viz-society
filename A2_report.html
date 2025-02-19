@@ -20,85 +20,80 @@
 		<section>
 			<h2>Subtheme: Historical Harms, Contemporary Effects</h2>
 
+			<h3>Dataset</h3>
+			<p>This dataset contains collective spatial data from City Survey Files collected by the Home Owner’s Loan Corporation (HOLC), 1935-1940 at the National Archives, downloaded from Mapping Inequality (https://dsl.richmond.edu/panorama/redlining/data) and processed to only include data on cities within the Metropolitan Area Planning Council (MAPC) regions. This dataset contains two sets of information: (1) geographic information about areas in Greater Boston cities, such as shape, location, city, etc.; (2) assigned labels from a redlining map, such as category value, grade, whether the area is commercial/industrial/residential, etc. I’m interested in this dataset because I’m interested in learning more about the “Historical Harms, Contemporary Effects” subtheme, and I believe it’s important to investigate historical discriminatory practices like redlining to better understand its effects on contemporary housing access, stability, and affordability in Greater Boston.</p>
+
 			<h3>Overall Analysis Questions</h3>
 			<ol>
-				<li>QUESTION_1</li>
-				<li>QUESTION_2</li>
-				<li>QUESTION_3</li>
-				<li>...</li>
+				<li>What is the distribution of area categories across different cities?
+					<ul>
+						<li>As a resident of Cambridge, I am curious to see how trends from the City Survey Program categorizations affect today’s neighborhoods around Boston.</li>
+					</ul>
+				</li>
+				<li>Are there geographic patterns for areas with higher or lower grades?
+					<ul>
+						<li>The Timeline of Housing Discrimination reading discusses how the development of the suburbs in the 1950s-75 “magnified the effects of segregation by increasing the physical separation between whites and minorities.” I wonder if there are already signs/trends of this in the City Survey Files, 1935-40.</li>
+					</ul>
+				</li>
+				<li>What patterns exist between different types of land usage (commercial, industrial, residential, etc.) and redlining categories?
+					<ul>
+						<li>The Timeline of Housing Discrimination reading touches on how neighborhood development choices and lack of social planning (especially after the development of Route 128 and 495) represented a “a social failure approaching disaster in terms of its impact on the poor and minority groups.”</li>
+					</ul>
+				</li>
 			</ol>
 		</section>
 
 		<section>
 			<h2>Discoveries & Insights</h2>
 
+			<p>To gain an overview of the shape and structure of the dataset, we begin by plotting the spatial information of the cities’ areas on a map and making opening observations about the distributions of variables like the areas’ assigned City Survey categories. Then, as we continue to explore the data with multivariate plots, we look at the relationship between the dataset and our overall questions.</p>
+
 			<figure>
-				<img src="IMAGE_FILENAME" alt="" />
+				<img src="images/map_1.png" alt="Map of Boston Area by HOLC-assigned Category, with Business/Industrial/Commercial Category" />
 				<figcaption>
-				ENTER IMAGE CAPTION HERE.
+					A visualization of neighborhood classifications based on desirability, ranging from "Best" (orange) to "Hazardous" (light blue) and Business/Industrial/Commercial zones (red).
 				</figcaption>
 			</figure>
 
 			<figure>
-				<img src="IMAGE_FILENAME" alt="" />
+				<img src="images/map_edited.png" alt="Map of Boston Area by HOLC-assigned Category" />
 				<figcaption>
-				ENTER IMAGE CAPTION HERE.
+					A visualization of neighborhood classifications based on desirability, ranging from "Best" (orange) to "Hazardous" (light blue).
 				</figcaption>
 			</figure>
 
 			<figure>
-				<img src="IMAGE_FILENAME" alt="" />
+				<img src="images/bar_city_normalized.png" alt="Normalized Bar Chart of Area Classifications Across Different Cities" />
 				<figcaption>
-				ENTER IMAGE CAPTION HERE.
+					A breakdown in percentage of neighborhood classifications by city, showing the proportion of "Best," "Still Desirable," "Definitely Declining," and "Hazardous" areas in each location.
 				</figcaption>
 			</figure>
 
 			<figure>
-				<img src="IMAGE_FILENAME" alt="" />
+				<img src="images/bar_city.png" alt="Unnormalized Bar Chart of Area Classifications Across Different Cities" />
 				<figcaption>
-				ENTER IMAGE CAPTION HERE.
+					A breakdown in number of neighborhood classifications by city, showing the proportion of "Best," "Still Desirable," "Definitely Declining," and "Hazardous" areas in each location.
 				</figcaption>
 			</figure>
 
 			<figure>
-				<img src="IMAGE_FILENAME" alt="" />
+				<img src="images/city_geographic.png" alt="Map Comparison of Eight Cities in Boston with Areas in All Classications" />
 				<figcaption>
-				ENTER IMAGE CAPTION HERE.
+					A map comparison of of neighborhood classifications — "Best," "Still Desirable," "Definitely Declining," and "Hazardous" across eight selected cities in the Boston area.
 				</figcaption>
 			</figure>
 
 			<figure>
-				<img src="IMAGE_FILENAME" alt="" />
+				<img src="images/city_geographic_include.png" alt="Map Comparison of Eight Cities in Boston with Areas in All Classications, including Business/Industrial/Commercial Areas" />
 				<figcaption>
-				ENTER IMAGE CAPTION HERE.
+					A map comparison of of neighborhood classifications — "Best," "Still Desirable," "Definitely Declining," "Hazardous," and Business/Industrial/Commercial across eight selected cities in the Boston area.
 				</figcaption>
 			</figure>
 
 			<figure>
-				<img src="IMAGE_FILENAME" alt="" />
+				<img src="images/Dashboard_4.png" alt="Spatial Distribution for Area Categories in Boston" />
 				<figcaption>
-				ENTER IMAGE CAPTION HERE.
-				</figcaption>
-			</figure>
-
-			<figure>
-				<img src="IMAGE_FILENAME" alt="" />
-				<figcaption>
-				ENTER IMAGE CAPTION HERE.
-				</figcaption>
-			</figure>
-
-			<figure>
-				<img src="IMAGE_FILENAME" alt="" />
-				<figcaption>
-				ENTER IMAGE CAPTION HERE.
-				</figcaption>
-			</figure>
-
-			<figure>
-				<img src="IMAGE_FILENAME" alt="" />
-				<figcaption>
-				ENTER IMAGE CAPTION HERE.
+					A series of maps depicting different area classifications across the region. Each color represents a specific category, highlighting patterns of "Best," "Still Desirable," "Definitely Declining," and "Hazardous" areas.
 				</figcaption>
 			</figure>
 		</section>
@@ -106,7 +101,10 @@
 		<section>
 			<h2>Summary</h2>
 
-			<p>WRITE FINAL SUMMARY HERE.</p>
+			<p>In this exploratory data analysis, we explore the spatial distribution of data from City Survey Files collected by HOLC from 1935-1940, specifically filtered to only contain cities under the jurisdiction of the MAPC. We first examine basic attributes in the data, finding that the number of area districts vary widely from city to city.
+
+				Then, we look more closely at the geographic distributions of individual cities, realizing that area category relates to proximity to business, industrial, and commercial centers — areas closer to these centers are likely to be considered “hazardous,” and areas further away are likely to be considered “desirable.” More work with this data (and also with other datasets) should be done to explore this finding — for example, we could obtain and investigate data on the geographical distances between each area and each city, and we could research environmental hazards at the time that could have had influence on the categorization of these residential areas. It’s important to study this as discriminatory redlining practices did not exist in a vacuum in the 1930s-40s — the legacy of their effects continue to affect housing access, stability, and affordability in Greater Boston today.
+			</p>
 		</section>
 	</main>
 </body>
