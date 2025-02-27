@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Vis & Society Assignment 3</title>
+	<link rel="stylesheet" href="https://vis-society.github.io/assignments/report.css" />
+</head>
+
+<body>
+	<header>
+		<h1>
+			<small>Assignment 3</small>
+			Visualization Critique & Redesign
+		</h1>
+
+		<p>
+			<strong>Renee Ge</strong> — <em>renge@mit.edu</em>
+		</p>
+	</header>
+
+	<main>
+		<section>
+			<h2>Reading & Critique</h2>
+
+			<figure>
+				<img src="https://vis-society.github.io/assets/imgs/covid-spiral.png" alt="" />
+			</figure>
+
+			<p>
+				Insights about the data/visualization:
+			</p>
+
+			<ul>
+				<li>This visualization seeks to depict new COVID-19 cases in the United States from January 2020 to January 2022, over a 7-day average. The width of the line is nonexistent until around mid-March 2020, which aligns with my knowledge of when the first cases in the U.S. occurred.</li>
+				<li>In the winter months from November 2020 to February 2021, the width of the line increased.</li>
+				<li>The width of the line decreased sharply from May 2021 into July 2021, coinciding with the arrival and dissemination of the COVID-19 vaccines.</li>
+				<li>The width of the line increased from August 2021 to October 2021.</li>
+				<li>In January 2022, at the peak of the Omicron variant of the COVID-19 pandemic, the width of the line sharply increased.</li>
+			</ul>
+
+			<p>
+				Design Critique:
+			</p>
+
+			<ul>
+				<li>I think the visual encodings in this design are difficult to understand — it confuses me how the width of the line can be compared across different years of the same months, because to me the difference in circumference length of the 2021 year makes the number of cases look misleadingly larger than the same month in 2020 at times.</li>
+				<li>I also thought the design of the legend wasn’t helpful because it was hard to use the legend to estimate the exact number of new COVID-19 cases at any different point in time.</li>
+				<li>It was also hard to tell immediately which month the line was at, for the nonlabeled months.</li>
+				<li>I did understand the takeaway message about the severity of the Omicron variant, although I wish more nuance was given specifying whether the width of the line indicated the reported cases at the time, or the cases as they occurred.</li>
+				<li>I do appreciate the simplicity of the design (e.g. the consistent type, similar font size, etc.), although I think the “7-day average” note should be in the title/in a subtitle rather than written on the visualization itself.</li>
+			</ul>
+		</section>
+
+		<section>
+			<h2>Visualization Sketches</h2>
+
+      <figure>
+				<img src="images/IMG_7887.JPG" alt="Design sketch 1: stacked line charts by year." width="900" height=auto/>
+				<figcaption>
+					Design sketch 1: stacked line charts by year.
+				</figcaption>
+			</figure>
+
+			<p>
+				Design Rationale for Sketch 1:
+			</p>
+
+			<ul>
+				<li>Tried to go back to basics, focusing on making sure the actual number of new cases could be easily found</li>
+				<li>Used dots to show discreteness of the data, since these are 7-day averages</li>
+				<li>Differentiated years through color/shape of the dots</li>
+				<li>I disliked that it didn’t capture the continuous nature of the years, which the original spiral did well</li>
+			</ul>
+
+			<figure>
+				<img src="images/IMG_7887 copy.JPG" alt="Design sketch 2: heatmap by year." width="900" height=auto/>
+				<figcaption>
+					Design sketch 2: heatmap by year.
+				</figcaption>
+			</figure>
+
+			<p>
+				Design Rationale for Sketch 2:
+			</p>
+
+			<ul>
+				<li>Used color gradient to capture intensity/increased number of new cases</li>
+				<li>Compared years side-by-side so trends across similar months/times of years can still be observed</li>
+				<li>Issue: how many boxes (each box is a week) in a row? How many in a column? Which box belongs to which month? Seems imprecise</li>
+			</ul>
+
+			<figure>
+				<img src="images/IMG_7889.JPG" alt="Design sketch 3: preserving original spiral." width="900" height=auto/>
+				<figcaption>
+					Design sketch 3: preserving original spiral
+				</figcaption>
+			</figure>
+
+			<p>
+				Design Rationale for Sketch 3:
+			</p>
+
+			<ul>
+				<li>Addressed scaling issue with different circumferences in the original by making the spiral more tightly wound so radius doesn’t change that much</li>
+				<li>Used individual rectangles to express discreteness in data because each data point is a 7-day average</li>
+				<li>Used color as well as size to express intensity/number of new cases</li>
+			</ul>
+		</section>
+
+		<section>
+			<h2>Final Visualization Design</h2>
+      
+			<figure>
+				<img src="images/Dashboard 1 (1).png" alt="Visualization design of New Covid-19 Data in the United States from Jan. 2020 to Sept. 2022." width="900" height=auto/>
+				<figcaption>
+					Visualization design of New Covid-19 Data in the United States from Jan. 2020 to Sept. 2022.
+				</figcaption>
+			</figure>
+
+		</section>
+
+		<section>
+			<h2>Design Process & Design Decisions</h2>
+
+			<p>
+        I wanted to return to the simplicity of the original design, while addressing my personal issues with understanding and interpreting the design. To me, the unconventional shape of the design is effective in capturing the continuity of time as well as patterns across months, although there were many pitfalls to the original. More on my process in my reflection.
+      </p>
+
+      <h3>Reflection</h3>
+
+      <p>
+        In this design, I wanted to preserve the spiral shape of the original NYT visualization to keep the seasonal patterns in new cases across multiple years (e.g. new cases during the winter and decreasing during warmer months) and continue expressing time as a continuous dimension. I debated dividing up the data by year and comparing each year visually, but to me this wouldn’t have done justice to the Covid-19 data itself — for example, December 2020’s new cases provide important context for looking at January 2021’s new case data. It makes sense to keep this data continuous across time while also allowing easy comparisons across the same months of multiple years, which the spiral shape does well. I also varied not only the length of the line of each day, but also added color to express the number of new cases in relation to the entire pandemic (days with larger numbers are colored more darkly and have a longer line). I also chose to color this visualization in blue — personal preference, but to me a more gentle color.
+      </p>
+
+	  <p>
+		I increased the radius of the spiral while making its loops closer together, to address my previous issue about the outside part of the spiral looking misleadingly bigger/with more new cases because of the drastic increase in radius — although this didn’t address the problem fully. I also used color to help readers better understand and compare the number of cases across time, as it is difficult to gauge how many cases were confirmed in a day purely by referencing the width alone. Additionally, I expressed the new cases data in a discrete way to better capture the nature of testing each day. However, for me, this visualization is incomplete. I intended to add polar coordinates and radial lines to express the months of the year in the spiral, but couldn’t figure out how to do this with Tableau. I also wished I fit the legend inside of the spiral itself to save space.
+	  </p>
+		</section>
+	</main>
+</body>
+</html>
