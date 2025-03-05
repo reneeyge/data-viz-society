@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Vis & Society Assignment 3</title>
+	<link rel="stylesheet" href="https://vis-society.github.io/assignments/report.css" />
+</head>
+
+<body>
+	<header>
+		<h1>
+			<small>Assignment 4</small>
+			Persuasive or Deceptive Visualization?
+		</h1>
+
+		<p>
+			<strong>Renee Ge</strong> — <em>renge@mit.edu</em>
+		</p>
+	</header>
+
+	<main>
+		<p>For this assignment, I'm working with the "Civilian Complaints Against New York City Police Officers" dataset compiled by ProPublica, containing more than 12,000 civilian complaints filed against the NYPD, with demographic information about the complainant and officer, the category of the alleged misconduct, and the result of the complaint.</p>
+    <h2>Proposition: NYPD officers are rarely disciplined for civilian complaints.</h2>
+
+		<section>
+      <h3>FOR the Proposition</h3>
+
+      <figure>
+				<img src="images/Sheet 2.png" alt="A stacked bar chart showing the Board Disposition of Complaints against the NYPD, with percentages displayed inside each bar." />
+				<figcaption>
+					This is a stacked bar chart showing the Board Disposition of Complaints against the NYPD, with percentages displayed inside each bar. The outcomes of the complaints are categorized as Exonerated (the alleged conduct occurred but did not violate NYPD's rules of conduct, which gives officers huge discretion over use of force), Substantiated (the alleged conduct occurred and officers were disciplined for the complaint), and Unsubstantiated (the CCRB could not conclude if the conduct occurred and broke the rules). The Substantiated category has subcategories detailing the corresponding discipline recommended, such as charges, command level instruction, etc. The Substantiated category makes up the lowest percentage of all Board Dispositions.
+				</figcaption>
+			</figure>
+
+			<p>
+				Design Decisions and Rationale:
+			</p>
+
+			<ul>
+				<li>Score: 0.5</li>
+				<li>I wanted to create a visualization to affirm my proposition. To me, the most effective way was to directly look at the percentage breakdowns between exonerated, unsubstantiated, and substantiated cases through a structure like a bar chart. There were many different subcategories of the “Substantiated” disposition — these were followed by details of the discipline type recommended by the board (e.g. charges, command discipline, formalized training, etc.), so I chose to stack all of these subcategories into a universe “Substantiated” bar.</li>
+				<li>Even once stacking them all into one “Substantiated” bar, it was still the smallest bar. Less than 25% of all cases are substantiated (i.e. the NYPD officers are disciplined for the complaint), while 28.81% cases are exonerated (the alleged conduct occurred but did not violate NYPD’s rules, since officers typically have huge discretion over use of force) and 46.31% of cases are unsubstantiated — as in the CCRB investigated the complaint but could not confirm that the conduct occurred and broke the rules.</li>
+				<li>I chose to also label “Substantiated” using green colors and “Exonerated” using red to express the justice and injustice of board disposition, which I thought was a deceptive tool that made my visualization more persuasive.</li>
+			</ul>
+    </section>
+
+    <section>
+      <h3>AGAINST the Proposition</h3>
+
+      <figure>
+				<img src="images/Sheet 3.png" alt="A line chart showing the trend of NYPD civilian complaints over time, categorized by Board Disposition of Complaint (Exonerated, Substantiated, and Unsubstantiated)." />
+				<figcaption>
+          This is a line chart showing the trend of NYPD civilian complaints over time, categorized by Board Disposition of Complaint (Exonerated, Substantiated, and Unsubstantiated). If conditioning only for complaint cases where the alleged conduct conclusively occurred (excluding the Unsubstantiated category), over time, the number of Substantiated cases across the years increases and eventually surpasses the number of Exonerated cases. After 2012, if the alleged conduct is concluded to have occurred, the complaint is more likely to be ruled as Substantiated than Exonerated.
+				</figcaption>
+			</figure>
+
+			<p>
+				Design Decisions and Rationale:
+			</p>
+
+			<ul>
+				<li>Score: -1</li>
+				<li>To argue against this proposition, I chose to look instead at trends in the change of substantiated, unsubstantiated, and exonerated complaint cases across time. I used a line graph to show trends from 1985-2018 and also used colors in the labels of each category as a deceptive tool to make my visualization more persuasive. From this, I found that excluding unsubstantiated cases, where the CCRB investigated and could not determine if the conduct occurred, among cases where the conduct did occur, over time, the number of substantiated cases exceeded the number of exonerated cases (starting in 2012).</li>
+				<li>However, I did have to exclude 2019-2020 because the number of exonerated cases started increasing again. But in recent years, for civilian complaints that CCRB concludes did occur, NYPD officers are more likely to be disciplined than not.</li>
+			</ul>
+    </section>
+
+    <section>
+      <h2>Final Reflection</h2>
+
+      <p>It was difficult for me to create a visualization that argued against my proposition. No matter how I looked at the data, it seemed to me that NYPD officers are less likely to be disciplined for civilian complaints. I tried switching to other propositions — e.g. my other idea was “Civilian complaints against NYPD officers disproportionately involve Black and Hispanic complainants” — but no matter what possible proposition I came up with, it was more difficult to create visualizations to argue against it.</p>
+	  <p>I’m not sure of my definition of “ethical analysis and visualization” — I suppose my criteria is that you shouldn’t have to brainstorm out of the box too much to manipulate the shape of the data. If you find yourself trying and struggling to make your data conform to a shape you expect or want it to, I don’t think that’s acceptable. I still think on some level a dataset as some sort of “ground truth” that expresses a certain reality, so that it’s hard to argue otherwise (e.g. to me, looking at this dataset, it’s hard for me to conclude and argue that NYPD officers are overdisciplined, or that civilian complaints do not disproportionately involve Black and Hispanic New Yorkers).</p>
+    </section>
+	</main>
+</body>
+</html>
